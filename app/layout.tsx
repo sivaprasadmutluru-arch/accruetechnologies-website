@@ -7,7 +7,7 @@ import PageLoader from '@/components/PageLoader';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://accruetechnologies.com"),
-  title: "Accrue Technologies | AI Innovation Hub",
+  title: "Accrue Technologies | Technology Built Around People",
   description: "Web, mobile and AI engineering. Java, React, React Native, AWS and DevOps from idea to ongoing maintenance.",
   icons: {
     icon: "/assets/accrue-logo.svg",

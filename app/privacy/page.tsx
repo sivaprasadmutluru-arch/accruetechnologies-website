@@ -35,7 +35,7 @@ export default function Page() {
       <p>Enquiries older than 90 days are excluded from the admin enquiry view and export. The contact form deletes those older database records when it processes a new submission. Downloaded exports and provider logs have separate retention arrangements.</p>
       <p>Administrator accounts remain stored until removed. Disabling an account revokes access and sessions but does not erase the account record. Session access expires after eight hours, invitation links expire after 24 hours, and authentication rate-limit records expire after 15 minutes. Expiry prevents their use; expired authentication tokens are purged during automated maintenance.</p>
       <h2>7. Your choices and privacy requests</h2>
-      <p>You can call us instead of using the contact form. To ask about information you submitted, request a copy, correct it, request deletion or withdraw consent for further enquiry follow-up, contact us at <a href="mailto:siva@accruetechnologies.com">siva@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>. Include your enquiry reference if you have one. We verify your identity prior to fulfilling data subject requests.</p>
+      <p>You can call us instead of using the contact form. To ask about information you submitted, request a copy, correct it, request deletion or withdraw consent for further enquiry follow-up, contact us at <a href="mailto:hr@accruetechnologies.com">hr@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>. Include your enquiry reference if you have one. We verify your identity prior to fulfilling data subject requests.</p>
       <p>We review requests and explain any information that needs to be retained for legal or security reasons. You can use the same contact number to raise a privacy concern or complaint. Withdrawing consent does not undo processing already completed.</p>
       <h2>8. Security</h2>
       <p>The application uses password hashing, role-based access, expiring sessions, input validation and rate limits. On HTTPS deployments, administrator cookies are marked Secure; they are also HttpOnly and SameSite=Lax. These measures reduce risk. Keep passwords and invitation links private, and sign out on shared devices.</p>
@@ -44,7 +44,7 @@ export default function Page() {
       <p>Project requirements submitted through the homepage form are stored and emailed in the same way as Contact page enquiries.</p>
       <h2>10. Changes and contact</h2>
       <p>We publish updates to this policy directly on this page with an updated effective date whenever website features or information practices change. The date above identifies the latest revision.</p>
-      <p>For privacy questions, contact <strong>Accrue Technologies</strong> at <a href="mailto:siva@accruetechnologies.com">siva@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>.</p>
+      <p>For privacy questions, contact <strong>Accrue Technologies</strong> at <a href="mailto:hr@accruetechnologies.com">hr@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>.</p>
     </section>
   </>;
 }

@@ -21,4 +21,4 @@ class Statement {
  run(){const r=db().prepare(this.sql).run(...this.args);return {meta:{changes:Number(r.changes)}};}
 }
 const DB={prepare:(sql:string)=>new Statement(sql),async batch(statements:Statement[]){const d=db();d.exec('BEGIN');try{const results=[];for(const s of statements)results.push(s.run());d.exec('COMMIT');return results;}catch(e){d.exec('ROLLBACK');throw e;}}};
-export const env={DB,ADMIN_EMAIL:process.env.ADMIN_EMAIL,ADMIN_SETUP_TOKEN:process.env.ADMIN_SETUP_TOKEN,MAIL_SERVICE_URL:process.env.MAIL_SERVICE_URL,MAIL_SERVICE_KEY:process.env.MAIL_SERVICE_KEY,PUBLIC_SITE_URL:process.env.PUBLIC_SITE_URL};
+export const env={DB,ADMIN_EMAIL:process.env.ADMIN_EMAIL,ADMIN_SETUP_TOKEN:process.env.ADMIN_SETUP_TOKEN,MAIL_SERVICE_URL:process.env.MAIL_SERVICE_URL,MAIL_SERVICE_KEY:process.env.MAIL_SERVICE_KEY,PUBLIC_SITE_URL:process.env.PUBLIC_SITE_URL,ACCRUEHR_ENQUIRY_URL:process.env.ACCRUEHR_ENQUIRY_URL,ACCRUEHR_ENQUIRY_SECRET:process.env.ACCRUEHR_ENQUIRY_SECRET};

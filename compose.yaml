@@ -14,6 +14,18 @@ services:
     depends_on:
       - email
     mem_limit: 768m
+  enquiry-sync:
+    image: accrue-technologies-website:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_PATH: /data/accrue.sqlite
+    volumes:
+      - accrue_data:/data
+    command: ["sh", "-c", "while true; do node --experimental-transform-types scripts/sync-accruehr.mjs; sleep 60; done"]
+    mem_limit: 128m
+    depends_on:
+      - website
   email:
     build: ./mail-service
     restart: unless-stopped

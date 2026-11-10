@@ -44,7 +44,7 @@ export default function Page() {
       <p>These Terms are governed by the laws of India. Legal proceedings arising from or connected to these Terms fall under the exclusive jurisdiction of the courts located in Hyderabad, Telangana / Andhra Pradesh, India.</p>
 
       <h2>12. Contact</h2>
-      <p>For questions or formal legal notices, contact <strong>Accrue Technologies</strong> at <a href="mailto:siva@accruetechnologies.com">siva@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>.</p>
+      <p>For questions or formal legal notices, contact <strong>Accrue Technologies</strong> at <a href="mailto:hr@accruetechnologies.com">hr@accruetechnologies.com</a> or <a href="tel:+919381934911">+91 9381934911</a>.</p>
     </section>
   </>;
 }

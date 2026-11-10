@@ -13,4 +13,4 @@ CNAME www -> accruetechnologies.com
 
 The application must remain behind the HTTPS reverse proxy. Set PUBLIC_SITE_URL and MAIL_SITE_ORIGIN to https://accruetechnologies.com. Secrets belong in the private server .env and are excluded from this source archive. The current Gmail sender remains shivatechnologiesai@gmail.com; domain registration alone does not create a new email mailbox.
 
-Run docker compose up -d --build from the deployment directory. Do not use down -v unless permanently deleting the Accrue database. Purchoose runs in a separate Compose project and must not be changed or stopped by Accrue deployments.
+Run docker compose up -d --build from the deployment directory. The `enquiry-sync` service retries AccrueHR enquiry delivery every minute; preserve its private portal URL and signing key in `.env`. The 4 November 2026 release is under `/opt/accrue-technologies/releases/20261104-0930`. Do not use down -v unless permanently deleting the Accrue database. Purchoose runs in a separate Compose project and must not be changed or stopped by Accrue deployments.

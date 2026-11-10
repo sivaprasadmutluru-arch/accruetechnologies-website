@@ -15,4 +15,4 @@ Deploy this folder on a Node.js server with a process supervisor. Inject secrets
 
 SMTP acceptance does not guarantee inbox placement. Failures are reported without discarding enquiries or invitations. This version attempts delivery immediately; it has no background retry queue or email tracking. Provider logs and recipients' copies have separate retention from the website database. The service does not log email contents, passwords or invitation tokens.
 
-The sender and notification inbox are `shivatechnologiesai@gmail.com`. A custom-domain sender needs a verified mailbox or alias.
+The SMTP sender is `shivatechnologiesai@gmail.com`; website enquiry notifications go to `hr@accruetechnologies.com` when `MAIL_NOTIFY_TO` is configured as shown. A custom-domain sender needs a verified mailbox or alias.
